@@ -71,43 +71,66 @@
       font-size: 15px;
     }
 
-    a {
+    button {
       display: inline-block;
       margin-top: 20px;
       padding: 12px 25px;
       background-color: #3498db;
       color: #fff;
-      text-decoration: none;
+      border: none;
       border-radius: 6px;
       font-size: 16px;
       font-weight: 500;
+      cursor: pointer;
       transition: background-color 0.3s ease;
     }
-    
-    a:hover {
+
+    button:hover {
       background-color: #2980b9;
+    }
+
+    #responseMessage {
+      margin-top: 20px;
+      color: #27ae60;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
   <img class="background-img" src="outpass1.jpg" alt="Background Image">
 
   <div class="form-wrapper">
     <div class="container">
       <h4>Out Pass Form</h4>
-      <form>
+      <form id="outpassForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
 
         <label for="enrollment">Enrollment No:</label>
-        <input type="text" id="enrollment" name="enrollment">
+        <input type="text" id="enrollment" name="enrollment" required>
 
-        <a href="project.html">Submit</a>
+        <button type="submit">Submit</button>
       </form>
+      <div id="responseMessage"></div>
     </div>
   </div>
 
+  <script>
+    document.getElementById('outpassForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Collect form data
+      const name = document.getElementById('name').value;
+      const enrollment = document.getElementById('enrollment').value;
+
+      // Display a confirmation message
+      const responseMessage = `Out Pass Request Submitted Successfully!<br>Name: ${name}<br>Enrollment No: ${enrollment}`;
+      document.getElementById('responseMessage').innerHTML = responseMessage;
+
+      // Optionally, reset the form
+      this.reset();
+    });
+  </script>
 </body>
 </html>
 // code completed succesfully
