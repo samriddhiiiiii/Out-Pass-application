@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Out Pass</title>
-  <link rel="stylesheet" href="stylesheet1.css">
-  <link rel="project.html" href="project.html">
-  
-    
+   <link rel="stylesheet" href="stylesheet1.css">
+   <script src="javascript.js"></script>
+
 </head>
 <body>
-  <img class="background-img" src="outpass2.jpg" alt="Background Image">
+  <div class="form-wrapper" role="form" aria-label="Out Pass Form">
+    <h4>Out Pass Form</h4>
+    <form id="outpassForm" novalidate>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Enter your name"
+        autocomplete="off"/>
 
-  <div class="form-wrapper">
-    <div class="container">
-      <h4>Out Pass Form</h4>
-      <form id="outpassForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <label for="enrollment">Enrollment No:</label>
+      <input
+        type="text"
+        id="enrollment"
+        name="enrollment"
+        required
+        placeholder="Enter your enrollment number"
+        autocomplete="off"/>
 
-        <label for="enrollment">Enrollment No:</label>
-        <input type="text" id="enrollment" name="enrollment" required>
-
-<a href=" project.html ">Submit</a>
-
-      </form>
-      <div id="responseMessage"></div>
-    </div>
+      <button type="submit" aria-label="Submit Out Pass Form">Submit</button>
+    </form>
   </div>
 
-  <script>
-    document.getElementById('outpassForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-
-      // Collect form data
-      const name = document.getElementById('name').value;
-      const enrollment = document.getElementById('enrollment').value;
-
-      // Display a confirmation message
-      const responseMessage = `Out Pass Request Submitted Successfully!<br>Name: ${name}<br>Enrollment No: ${enrollment}`;
-      document.getElementById('responseMessage').innerHTML = responseMessage;
-
-      // Optionally, reset the form
-      this.reset();
-    });
-  </script>
+  <!-- Modal Popup -->
+  <div id="responseModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <div class="modal-content">
+      <span class="close" role="button" aria-label="Close Popup">&times;</span>
+      <p id="responseMessage" tabindex="0"></p>
+    </div>
+  </div>
 </body>
 </html>
+
 
