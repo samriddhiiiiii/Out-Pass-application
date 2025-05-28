@@ -13,7 +13,7 @@ A minimal and accessible web form for students to request an out pass. Built usi
 
 ## How to Use
 
-1. Open `index.html` in any modern browser.
+1. Open `outpass.html` in any modern browser.
 2. Fill in your **name** and **enrollment number**.
 3. Click the **Submit** button.
 4. A confirmation popup will appear.
