@@ -32,4 +32,9 @@ A minimal and accessible web form for students to request an out pass. Built usi
                     4>Samriddhiii
                     5>Patchipulusajaswitha
 > Future Plans-> To make it advanced and turn this *webpage to an application..
+ Brief of an Out Pass Application:
+Purpose: To formally request permission to leave the campus or office for a specific time.
+Details Included: Applicant’s information, reason for leaving, date and time of exit and return.
+Approval: Usually requires a signature or digital approval from an authorized person (e.g., teacher, manager).
+Usage: Helps maintain security and track individuals leaving temporarily.
                            
