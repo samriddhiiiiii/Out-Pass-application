@@ -1,4 +1,24 @@
 >>About Team-16 Project<<
+# Out Pass Form
+
+A minimal and accessible web form for students to request an out pass. Built using HTML, CSS (external), and JavaScript (external). It includes a simple modal popup to confirm submission and uses client-side validation.
+
+## Features
+
+- 🧾 Collects student's name and enrollment number
+- ✅ Validates form fields before submission
+- 💬 Displays confirmation via a modal popup
+- 🎨 Clean UI with external CSS support
+- ♿️ Accessible with ARIA roles and labels
+
+## How to Use
+
+1. Open `index.html` in any modern browser.
+2. Fill in your **name** and **enrollment number**.
+3. Click the **Submit** button.
+4. A confirmation popup will appear.
+
+## File Structure
 
 > Project Name=Outpass application for amity students
 
@@ -12,4 +32,4 @@
                     4>Samriddhiii
                     5>Patchipulusajaswitha
 > Future Plans-> To make it advanced and turn this *webpage to an application..
-                            
+                           
