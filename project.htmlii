@@ -111,23 +111,18 @@
           <option value="medical">Medical</option>
         </select>
       </div>
-
       <div class="form-section">
         <label for="leave-date">Date of Leave:</label>
         <input type="date" id="leave-date" name="leave_date" required>
-
         <label for="leave-time">Time of Departure:</label>
         <input type="time" id="leave-time" name="leave_time" required>
       </div>
-
       <div class="form-section">
         <label for="arrival-date">Date of Arrival:</label>
         <input type="date" id="arrival-date" name="arrival_date" required>
-
         <label for="arrival-time">Time of Arrival:</label>
         <input type="time" id="arrival-time" name="arrival_time" required>
       </div>
-
       <div class="form-section">
         <label for="approval">Approval By:</label>
         <select id="approval" name="approval" required>
@@ -135,11 +130,8 @@
           <option value="principal">HOD</option>
         </select>
       </div>
-
       <button type="submit">Submit Request</button>
-
     </form>
   </div>
-
 </body>
 </html>
